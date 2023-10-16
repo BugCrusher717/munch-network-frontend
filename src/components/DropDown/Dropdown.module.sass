@@ -1,0 +1,41 @@
+@import ~/styles/helpers
+
+.selectOptions
+  border: 1px solid $n4
+  padding: rem(4) rem(4) rem(4) rem(20)
+  position: relative
+  display: inline-block
+  border-radius: rem(8)
+  background: transparent
+  min-width: rem(186)
+
+.selectStyle
+  +base
+  cursor: pointer
+  display: flex
+  justify-content: space-between
+
+.dropdownContent
+  position: absolute
+  +shadow1
+  top: 110%
+  left: 0
+  display: none
+  border: 1px solid $n4
+  border-radius: rem(8)
+  overflow: hidden
+  background: $n0
+  width: 100%
+  +base
+
+.open
+  .dropdownContent
+    display: block
+    +shadow1
+
+.selectOption
+  cursor: pointer
+  width: 100%
+  padding: rem(4) rem(4) rem(4) rem(24)
+  &:hover
+    background: $n3

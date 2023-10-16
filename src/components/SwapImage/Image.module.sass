@@ -1,0 +1,31 @@
+@import ~/styles/helpers
+
+.image
+    position: absolute
+    display: inline-block
+    vertical-align: top
+    opacity: 0
+    transition: opacity .2s
+    &.loaded
+        opacity: 1
+
+.svgImage
+    position: absolute
+    border-radius: 1rem
+    height: 100%
+    width: 100%
+    inset: 0px
+    object-fit: cover
+    color: transparent
+
+    svg
+        width: 100% !important
+        height: 100% !important
+        display: inline-block
+        vertical-align: top
+        border-radius: rem(20)
+        transition: transform 1s
+
+    image
+        width: 100% !important
+        height: 100% !important
